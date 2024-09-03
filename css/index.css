@@ -20,7 +20,10 @@ a {
 }
 
 .header {
+  position: relative;
+  background-color: hsl(0, 0%, 100%);
   border-bottom: 1px solid hsl(0, 0%, 100%);
+  z-index: 1;
 }
 
 .navbar {
@@ -70,7 +73,6 @@ a {
 .invite-btn {
   padding: 1.3em 3em;
   font-size: 12px;
-  letter-spacing: 2.5px;
   font-weight: 500;
   color: hsl(0, 0%, 100%);
   background-color: hsl(136, 65%, 51%);
@@ -92,6 +94,7 @@ a {
   transform: translateY(-1px);
 }
 
+/* Content CSS */
 .content {
   display: flex;
   justify-content: space-between;
@@ -113,6 +116,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  transform: translate(20%, -10%);
 }
 
 .content-image {
