@@ -70,7 +70,6 @@ a {
 .invite-btn {
   padding: 1.3em 3em;
   font-size: 12px;
-  text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
   color: hsl(0, 0%, 100%);
@@ -91,4 +90,103 @@ a {
 
 .invite-btn:active {
   transform: translateY(-1px);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 50%;
+}
+
+.content-image-container {
+  position: relative;
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-image {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.content-desktop-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.content-mobile-background {
+  display: none;
+}
+
+.content-header {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: hsl(233, 26%, 24%);
+}
+
+.content-body {
+  font-size: 1rem;
+  color: hsl(233, 8%, 62%);
+  margin-bottom: 1rem;
+}
+
+.content-btn {
+  max-width: 195px;
+}
+
+/* Mobile CSS */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-container, .content-image-container {
+    max-width: 100%;
+  }
+
+  .content-image {
+    margin-top: 15px;
+  }
+
+  .content-desktop-background {
+    display: none;
+  }
+
+  .content-mobile-background {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .content-header {
+    text-align: center;
+  }
+
+  .content-body {
+    text-align: center;
+  }
+
+  .invite-btn {
+    align-self: center;
+  }
 }
