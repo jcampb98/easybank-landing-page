@@ -36,6 +36,10 @@ a {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.nav-menu a:hover {
+  color: hsl(136, 65%, 51%);
+}
+
 .nav-logo {
   width: auto; 
   height: 25px;
@@ -317,8 +321,7 @@ a {
   color: hsl(233, 8%, 62%);
 }
 
-/* Mobile CSS */
-@media (max-width: 768px) { 
+@media (max-width: 1024px) {
   .nav-logo {
     width: auto; 
     height: 25px;
@@ -354,10 +357,6 @@ a {
     padding: 10px 0;
     width: 100%;
     text-align: center;
-  }
-
-  .nav-menu a:hover {
-    color: hsl(136, 65%, 51%);
   }
 
   .hamburger.active .bar {
@@ -400,6 +399,76 @@ a {
     display: none;
   }
 
+  .content {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .content-container {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .content-header {
+    font-size: 1.5rem;
+  }
+
+  .content-btn {
+    margin: auto;
+  }
+
+  .content-image-container {
+    display: block;
+    margin-top: 1.5rem;
+  }
+
+  .content-image {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .content-desktop-background {
+    display: none;
+  }
+
+  .content-mobile-background {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .secondary-content-list {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .secondary-content-item {
+    text-align: center;
+  }
+
+  .content-item-icon {
+    height: 80px;
+    width: 80px;
+  }
+
+  .article-list {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .article-post-item {
+    max-width: 100%;
+  }
+
+  .article-post-image {
+    height: auto;
+  }
+}
+
+/* Mobile CSS */
+@media (max-width: 768px) { 
   .content {
     flex-direction: column;
     align-items: center;
@@ -471,7 +540,6 @@ a {
 
   .article-post-image {
     width: 100%;
-    height: auto;
     padding: 0px;
   }
 
