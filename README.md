@@ -92,5 +92,5 @@ and have it displayed properly as shown in the designs without breaking the page
 ## Author
 
 - Website - [Joshua Campbell](https://www.joshua-campbell.net/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/jcampb98)
+- Frontend Mentor - [@jcampb98](https://www.frontendmentor.io/profile/jcampb98)
 - LinkedIn - [Joshua Campbell](https://www.linkedin.com/in/joshua-campbell98/)
