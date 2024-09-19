@@ -335,7 +335,7 @@ a {
     width: 100%;
     left: 0;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: hsl(0, 0%, 100%);
     margin-top: 50px;
@@ -402,13 +402,17 @@ a {
     align-items: center;
   }
 
-  .content-container, .content-image-container {
-    max-width: 100%;
-    margin-bottom: 20px;
+  .content-image-container {
+    order: 1;
+    width: 100%;
   }
 
-  .content-image {
-    margin-top: 15px;
+  .content-container {
+    order: 2;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    flex-wrap: nowrap;
   }
 
   .content-desktop-background {
@@ -434,6 +438,10 @@ a {
 
   .invite-btn {
     align-self: center;
+  }
+
+  .secondary-content-container {
+    text-align: center;
   }
 
   .secondary-content-list {
