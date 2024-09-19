@@ -406,11 +406,17 @@ a {
 
   .content-container {
     max-width: 100%;
-    text-align: center;
   }
 
   .content-header {
     font-size: 1.5rem;
+  }
+
+  .content-header,
+  .content-body,
+  .article-header,
+  .secondary-content-container {
+    text-align: center;
   }
 
   .content-btn {
@@ -439,23 +445,15 @@ a {
     top: 0;
   }
 
+  .article-list,
   .secondary-content-list {
     flex-direction: column;
     gap: 1.5rem;
-  }
-  
-  .secondary-content-item {
-    text-align: center;
   }
 
   .content-item-icon {
     height: 80px;
     width: 80px;
-  }
-
-  .article-list {
-    flex-direction: column;
-    gap: 1.5rem;
   }
 
   .article-post-item {
@@ -498,22 +496,6 @@ a {
     left: 0;
     width: 100%;
     height: auto;
-  }
-
-  .content-header {
-    text-align: center;
-  }
-
-  .content-body {
-    text-align: center;
-  }
-
-  .invite-btn {
-    align-self: center;
-  }
-
-  .secondary-content-container {
-    text-align: center;
   }
 
   .secondary-content-list {
