@@ -220,8 +220,11 @@ a {
   max-width: 500px;
   background-color: hsl(0, 0%, 100%);
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 30px;
   margin-bottom: 20px;
+}
+
+.article-post-container {
+  padding: 30px;
 }
 
 .article-post-image {
@@ -452,18 +455,27 @@ a {
     display: content;
   }
 
+  .article-header {
+    text-align: center;
+  }
+
   .article-list {
     flex-direction: column;
     gap: 0;
   }
 
   .article-post-item {
-    max-width: 100%;
     margin-bottom: 30px;
+    padding: 0px;
   }
 
   .article-post-image {
     width: 100%;
     height: auto;
+    padding: 0px;
+  }
+
+  .article-post-container {
+    padding: 15px;
   }
 }
